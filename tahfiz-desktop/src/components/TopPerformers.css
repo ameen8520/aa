@@ -1,0 +1,82 @@
+.top-performers {
+  background: linear-gradient(135deg, #FF6B35, #D4AF37);
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.top-performers h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.performers-list {
+  display: grid;
+  gap: 10px;
+}
+
+.performer-item {
+  background: white;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.performer-item.rank-1 {
+  border-left: 5px solid gold;
+  background: #fffacd;
+}
+
+.performer-item.rank-2 {
+  border-left: 5px solid silver;
+  background: #f0f0f0;
+}
+
+.performer-item.rank-3 {
+  border-left: 5px solid #cd7f32;
+}
+
+.performer-rank {
+  font-size: 32px;
+  margin-left: 20px;
+}
+
+.medal {
+  display: inline-block;
+}
+
+.performer-info {
+  flex: 1;
+}
+
+.performer-info h3 {
+  color: #1A1A1A;
+  margin-bottom: 5px;
+}
+
+.performer-id {
+  color: #666;
+  font-size: 12px;
+}
+
+.performer-score {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.score {
+  font-size: 24px;
+  font-weight: bold;
+  color: #FF6B35;
+}
+
+.label {
+  color: #999;
+  font-size: 12px;
+}

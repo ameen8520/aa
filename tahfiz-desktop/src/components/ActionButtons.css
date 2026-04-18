@@ -1,0 +1,86 @@
+.action-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.action-btn {
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.3s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.action-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.action-btn:active {
+  transform: translateY(-2px);
+}
+
+.action-icon {
+  font-size: 32px;
+}
+
+/* أنواع الأزرار */
+.action-btn.primary {
+  background: linear-gradient(135deg, #FF6B35, #D4AF37);
+  color: white;
+}
+
+.action-btn.success {
+  background: linear-gradient(135deg, #28a745, #20c997);
+  color: white;
+}
+
+.action-btn.info {
+  background: linear-gradient(135deg, #17a2b8, #20c997);
+  color: white;
+}
+
+.action-btn.warning {
+  background: linear-gradient(135deg, #ffc107, #ff9800);
+  color: white;
+}
+
+.action-btn.danger {
+  background: linear-gradient(135deg, #dc3545, #fd7e14);
+  color: white;
+}
+
+.action-btn.primary:hover {
+  box-shadow: 0 6px 12px rgba(255, 107, 53, 0.3);
+}
+
+.action-btn.success:hover {
+  box-shadow: 0 6px 12px rgba(40, 167, 69, 0.3);
+}
+
+@media (max-width: 600px) {
+  .action-buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .action-btn {
+    padding: 15px;
+  }
+
+  .action-icon {
+    font-size: 24px;
+  }
+
+  .action-label {
+    font-size: 12px;
+  }
+}

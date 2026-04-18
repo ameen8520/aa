@@ -1,0 +1,79 @@
+.student-list {
+  padding: 20px;
+}
+
+.student-list h2 {
+  color: #FF6B35;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.students-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.student-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-right: 5px solid #FF6B35;
+  transition: all 0.3s;
+}
+
+.student-card:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transform: translateY(-5px);
+}
+
+.student-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #D4AF37;
+  padding-bottom: 10px;
+}
+
+.student-header h3 {
+  color: #1A1A1A;
+  font-size: 18px;
+}
+
+.id-badge {
+  background-color: #FF6B35;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.student-info {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.student-info p {
+  margin: 8px 0;
+  color: #333;
+}
+
+.student-progress {
+  margin-top: 15px;
+}
+
+.progress-bar {
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 10px;
+}
+
+.progress-fill {
+  background-color: #FF6B35;
+  height: 100%;
+  transition: width 0.3s;
+}

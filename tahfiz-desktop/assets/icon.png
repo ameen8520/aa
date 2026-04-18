@@ -1,0 +1,20 @@
+<!-- حفظ كـ icon.png في مجلد assets -->
+<!-- استخدم هذا الرابط لتحميل صورة: -->
+<!-- https://via.placeholder.com/512x512/FF6B35/FFFFFF?text=TAHFIZ -->
+
+<!-- أو استخدم هذا الكود في Python لإنشاء الصورة: -->
+
+from PIL import Image, ImageDraw, ImageFont
+
+# إنشاء صورة
+img = Image.new('RGB', (512, 512), color='#FF6B35')
+draw = ImageDraw.Draw(img)
+
+# رسم مربع أبيض
+draw.rectangle([50, 50, 462, 462], fill='#FFFFFF', outline='#FF6B35', width=5)
+
+# إضافة نص
+draw.text((200, 200), "تحفيظ", fill='#FF6B35', font=None)
+
+# حفظ الصورة
+img.save('tahfiz-desktop/assets/icon.png')

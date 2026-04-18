@@ -1,0 +1,115 @@
+.navbar {
+  background: linear-gradient(90deg, #FF6B35 0%, #D4AF37 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+  gap: 30px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: white;
+  cursor: pointer;
+}
+
+.brand-icon {
+  font-size: 32px;
+}
+
+.navbar-brand h1 {
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.nav-items {
+  display: flex;
+  gap: 10px;
+  flex: 1;
+  justify-content: center;
+}
+
+.nav-item {
+  background: rgba(255,255,255,0.2);
+  border: 2px solid transparent;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.nav-item:hover {
+  background: rgba(255,255,255,0.3);
+  transform: translateY(-2px);
+}
+
+.nav-item.active {
+  background: white;
+  color: #FF6B35;
+  border-color: #FF6B35;
+}
+
+.nav-icon {
+  font-size: 18px;
+}
+
+.nav-label {
+  white-space: nowrap;
+}
+
+.navbar-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-button {
+  background: rgba(255,255,255,0.2);
+  border: none;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-button:hover {
+  background: rgba(255,255,255,0.4);
+  transform: scale(1.1);
+}
+
+.icon-button.logout:hover {
+  background: rgba(220,53,69,0.6);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 10px 15px;
+  }
+
+  .nav-label {
+    display: none;
+  }
+
+  .nav-item {
+    padding: 8px;
+  }
+
+  .navbar-brand h1 {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- خلفية برتقالية -->
+  <rect width="200" height="200" fill="#FF6B35" rx="20"/>
+  
+  <!-- مربع أبيض -->
+  <rect x="30" y="30" width="140" height="140" fill="#FFFFFF" rx="10"/>
+  
+  <!-- رمز القرآن -->
+  <text x="100" y="120" font-size="80" font-weight="bold" 
+        text-anchor="middle" fill="#FF6B35" font-family="Arial">
+    📖
+  </text>
+  
+  <!-- اسم التطبيق -->
+  <text x="100" y="165" font-size="16" font-weight="bold" 
+        text-anchor="middle" fill="#FFFFFF" font-family="Arial">
+    تحفيظ ملعب
+  </text>
+</svg>

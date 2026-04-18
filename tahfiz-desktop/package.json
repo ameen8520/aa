@@ -1,0 +1,49 @@
+{
+  "name": "tahfiz-desktop",
+  "version": "1.0.0",
+  "description": "تطبيق تحفيظ ملعب فلسطين",
+  "main": "main.js",
+  "homepage": "./",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "electron": "electron .",
+    "electron-start": "electron .",
+    "react-start": "react-scripts start",
+    "react-build": "react-scripts build",
+    "electron-dev": "concurrently \"npm run react-start\" \"wait-on http://localhost:3000 && npm run electron-start\"",
+    "electron-build": "npm run react-build && electron-builder build --publish=never",
+    "electron-pack": "electron-builder --dir",
+    "preelectron-pack": "npm run react-build"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "electron-squirrel-startup": "^1.1.0",
+    "sqlite3": "^5.1.6",
+    "qrcode.react": "^1.0.1",
+    "pdfkit": "^0.13.0",
+    "axios": "^1.4.0"
+  },
+  "devDependencies": {
+    "electron": "latest",
+    "electron-builder": "latest",
+    "concurrently": "^8.2.0",
+    "wait-on": "^7.0.0"
+  },
+  "build": {
+    "appId": "com.tahfiz.desktop",
+    "productName": "تحفيظ ملعب فلسطين",
+    "files": [
+      "build/**/*",
+      "main.js",
+      "preload.js"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    }
+  }
+}
